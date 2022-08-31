@@ -18,7 +18,7 @@ function check() {
       userName: userName.value
     }));
     // 跳转到首页
-    window.location.replace('https://51930236.github.io/wsq_demo01/login.html')
+    window.location.replace('https://51930236.github.io/wsq_demo01/index.html')
   } else {
     alert("账号或密码 错误");
     /*判断是否处于登录状态，没登录清除record_timestamp*/
