@@ -2,7 +2,7 @@
  * @Author: 吴世强 11076535+mr-wushiqiang@user.noreply.gitee.com
  * @Date: 2022-08-31 15:34:12
  * @LastEditors: 吴世强 11076535+mr-wushiqiang@user.noreply.gitee.com
- * @LastEditTime: 2022-08-31 15:38:32
+ * @LastEditTime: 2022-08-31 15:51:58
  * @FilePath: \wsq_demo01\js\login.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -11,9 +11,11 @@ document.write(`<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.m
 function check() {
   var userName = document.getElementById('username');
   var pwd = document.getElementById('password');
+  console.log(pwd.value);
   var userPassword = md5(pwd.value);
   pwd = userPassword
-  if (pwd == '2BD12A930C3012F9BB4E0EA9BEC9A3FC') {
+  console.log(pwd);
+  if (pwd == 'e10adc3949ba59abbe56e057f20f883e') {
     localStorage.setItem("CURRENT_LOGIN_INFO", JSON.stringify({
       userName: userName.value
     }));
