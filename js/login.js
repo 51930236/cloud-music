@@ -19,6 +19,7 @@ function check() {
     }));
     // 跳转到首页
     window.location.replace('https://51930236.github.io/wsq_demo01/index.html')
+    console.log('跳转到首页',localStorage.getItem("CURRENT_LOGIN_INFO"));
   } else {
     alert("账号或密码 错误");
     /*判断是否处于登录状态，没登录清除record_timestamp*/
