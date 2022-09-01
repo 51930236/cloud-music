@@ -7,7 +7,7 @@
   <title>Document</title>
   <style type="text/css">
     body {
-      background-image: url('https://s1.ax1x.com/2020/06/04/twwn5q.jpg');
+      background-image: url('./images/bac1.jpg');
       background-repeat: no-repeat;
       background-size: 100%;
     }
@@ -110,6 +110,32 @@
     input::-webkit-input-placeholder {
       font-size: 14px;
     }
+
+    @media screen and (max-width: 400px) {
+      body {
+        background-image: url('./images/bac2.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+      }
+      .mod-new-reg-content {
+      /* 相对路径 */
+      position: absolute;
+      right: 3%;
+      top: 20%;
+      margin: 0 0 22px 39px;
+      margin-top: 80px;
+      width: 350px;
+      height: 320px;
+      *background: #fff;
+      background: #fff;
+      background: rgba(255, 255, 255, .3);
+      /* 圆角 */
+      border-radius: 12px;
+      /* 防止溢出 */
+      overflow: hidden
+    }
+
+    }
   </style>
   <script src="./js/login.js"></script>
 </head>
@@ -134,7 +160,7 @@
         <br>
         <label>
           <tr>
-            <td><input type="password" id="password" class="shurukuang  name="mima" placeholder="请输入密码"></td>
+            <td><input type="password" id="password" class="shurukuang  name=" mima" placeholder="请输入密码"></td>
           </tr>
         </label>
         <div>
